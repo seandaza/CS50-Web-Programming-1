@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>ANGELES Y DEMONIOS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+
+<!--Media query-->
+
+body {
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+</style>
+<body>
+
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ACERCA DEL AUTOR</span></h5>
+    <p>Hijo de un matemático y una compositora de música sacra. Estudió en la Phillips Exeter Academy y en el Amherst College. Como estudiante residió en Gijón (España) en el año de 1980, este traslado a España fue su primer viaje al extranjero estudiando en un instituto de dicha ciudad. Brown afirma que en 1985, un año antes de graduarse, estudió Historia del Arte en la Universidad de Sevilla, pero esta universidad declaró que no existen registros de que él hubiese sido estudiante en sus instalaciones, y que en caso de haberlo sido es probable que lo haya hecho como un estudiante itinerante en un simple curso de verano. Diplomado por el Amherst College, se dedicó a la música: produjo una grabación con canciones infantiles y fundó la empresa Dalliance, con la que grabó Perspective.</p>
+    <p>Sus tres primeras novelas, Digital Fortress (La fortaleza digital, 1998), Angels and demons (Ángeles y demonios, 2000) y Deception Point (La conspiración, 2001) tuvieron un éxito relativo, pero su cuarto trabajo, The Da Vinci Code (El código Da Vinci, 2003) se convirtió rápidamente en un fenómeno de masas, vendiendo más de sesenta millones de copias en todo el mundo y convirtiéndose en uno de los libros más leídos e influyentes de los últimos años.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>«La riqueza es algo común y corriente; la sabiduría, en cambio, es rara».</i></p>
+      <p>Dan Brown</p>
+    </div>
+    <img src="static/images/angeles_y_demonios.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Fecha de Publicacion:</strong> Mayo de 2000</p>
+  </div>
+</div>
+
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <p><strong>Comenta</strong> tus opiniones del libro:</p>
+    <form action="/action_page.php" target="_blank">
+      
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Comentarios, Opiniones y Analisis" required name="Message"></p>
+      <p align="center" ><button class="w3-button w3-black" type="submit">PUBLICAR</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.edx.org/es/course/cs50s-web-programming-with-python-and-javascript" title="CS50 Web-Programming" target="_blank" class="w3-hover-text-green">CS50 Web-Programming</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

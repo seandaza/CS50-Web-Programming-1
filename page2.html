@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<title>Libreria Virtual Alejandria</title>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+        <style>
+           p::selection {
+               color: red;
+               background-color: yellow;
+           }
+
+        </style>
+<body>
+<!--Media query-->
+<style>
+body {
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+</style>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#inicio" onclick="w3_close()" class="w3-bar-item w3-button">Inicio</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <a href=     onclick= "w3_close()" class="w3-bar-item w3-button">Salir</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16" style="max-width:1200px;margin:center"><nav class="navbar navbar-expand-sm bg-grey navbar-dark">
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Busca por Titulo y Autor">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+</nav>
+<br></div>
+    <div class="w3-center w3-padding-16">Recomendados</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="inicio">
+    <div class="w3-quarter">
+      <img src="static/images/angeles_y_demonios.jpg" alt="Dan Brown" style="width:100%">
+      <a href="page3.html"><h3>Angeles y Demonios</h3></a>
+      <p color: black>Resumen:El autor de El Código Da Vinci nos arrastra a una espiral de acción sin pausa, un impactante thriller donde se suceden las sorpresas y se revelan algunos de los más oscuros enigmas de la historia. Fuerzas que han permanecido ocultas durante siglos y que ahora planean destruir la Iglesia... literalmente.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="static/images/brief_history_of_time.jpg" alt="Stephen Hawking" style="width:100%">
+      <a href=" "><h3>A Brief History of Time</h3></a>
+      <p> Es este libro se explican los pilares de la cosmología, desde el Big Bang, el primer estallido que dio inicio al universo, hasta el origen de los agujeros negros, pasando por la posibilidad del viaje en el tiempo y la existencia de múltiples universos, a un lector sin formación específica en estas áreas...</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="static/images/diarios-estrellas-viajes-libro-stanislaw-lem.jpg" alt="Stanislaw Lem" style="width:88%">
+      <a href=""><h3>Diarios de las estrellas</h3></a>
+      <p>El genial polaco S. Lem recrea uno de los más divertidos relatos de ciencia ficción que se han escrito. Esta colección de viajes intergalácticos sigue estando fresca y saludable. Y quizás sea porque se plantea las mismas preguntas universales de siempre, sin caer en lo pretencioso: ¿de donde venimos, a donde vamos, estamos solos, porqué se me han quemado las tostadas?</p>
+    </div> 
+    <div class="w3-quarter">
+      <img src="static/images/ecce-homo.jpg" alt="Nietzsche" style="width:86%">
+      <a href=" "><h3>Ecce Homo</h3></a>
+      <p>Un libro autobiográfico, donde aparece su la cuarta etapa de su pensamiento. En la que hace un recorrido por toda su obra explicando el origen y la finalidad de cada uno de sus libros escritos antecedentemente. Asimismo ofrece detalles interesantes sobre su personalidad. El título es irónico, Ecce homo es una inscripción relativa a Jesucristo que significa: “He aquí al hombre”. Nietzsche utiliza la expresión ya que se considera a sí mismo el anticristo.</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="static/images/el_principito.jpg" alt="El Principito" style="width:100%">
+      <a href=" "><h3>El Principito</h3></a>
+      <p>Su éxito, probablemente, lo encontremos en su manera de abordar diferentes temas como la amistad, el amor o el propio sentido de la vida que dan lugar a muchas posibles interpretaciones, de las cuáles nosotros ya os remarcamos las nuestras. También deja un legado de frases maravillosas que merece la pena leer. </p>
+    </div>
+    <div class="w3-quarter">
+      <img src="static/images/el_tunel.jpg" alt="El Tunel" style="width:101%">
+      <a href=" "><h3>El Tunel</h3></a>
+      <p>El Túnel es una novela psicológica escrita por el argentino Ernesto Sábato y publicada en el año 1948, una de las grandes novelas sudamericanas del siglo. Es un libro en el que su protagonista cuenta a los lectores la historia de como mato a su esposa y las razones que lo hicieron cometer ese crimen.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="static/images/el-universo-en-una-cascara-de-nuez.jpg" alt="Stephen Hawking" style="width:95%">
+      <a href=" "><h3>El Universo en una Cascara de Nuez</h3></a>
+      <p>En este libro, Hawking nos conduce hasta la frontera misma de la física teórica -donde la verdad supera muchas veces a la ficción— para explicarnos en términos verdaderamente sencillos, y en ocasiones muy divertidos, los principios que rigen nuestro universo.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="static/images/genealogia-de-la-moral.jpg" alt="Genealogia de la Moral" style="width:97%">
+      <a href=" "><h3>Genealogia de la Moral</h3></a>
+      <p>La genealogía de la moral forma parte de la última etapa creativa de Nietzsche. Fue un libro escrito en prosa, cuya intención fue realizar una aguda crítica a los postulados filosóficos tradicionales que han prevalecido en la moral y las creencias en el mundo occidental.</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>About Me, The Food Man</h3><br>
+    <img src="/w3images/chef.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>I am Who I Am!</b></h4>
+      <h6><i>With Passion For Real, Good Food</i></h6>
+      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
